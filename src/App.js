@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 import Card from './Componentes/Card';
 import axios from 'axios';
+import mongoose from "mongoose";
 
 class App extends Component {
 
@@ -29,7 +30,6 @@ class App extends Component {
         return <Card nombre={author.name} bio={author.biography} age={author.age}/>
       });
       return cardListAuthors;
-      //[<Card/>,<Card/>,<Card/>,<Card/>...]
     }
   }
 
