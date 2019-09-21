@@ -74,7 +74,8 @@ componentWillUnmount() {
             <Button color="danger" onClick={this.disminuirContador}>
               -
             </Button>
-            <Button color="success" className='ml-4' onClick={() => this.props.eliminar(this.props.id)} >
+            <Button color="success" className='ml-4' 
+            onClick={() => this.props.eliminar(this.props.id)} >
             Eliminar
           </Button>
           </div>
